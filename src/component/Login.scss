@@ -1,0 +1,37 @@
+.login {
+  background-image: linear-gradient(#dfdb06, #ac9308);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-family: 'Ubuntu';
+  .login-card {
+    position: relative;
+    top: calc(50vh - 144px);
+    left: calc(50vw - 210px);
+    padding-top: 36px;
+    padding-bottom: 66px;
+    width: 420px;
+    text-align: center;
+    background-color: white;
+    border-radius: 22px;
+    .login-card-wrapper {
+      display: flex;
+      justify-content: center;
+      height: 4em;
+      align-items: flex-end;
+      .login-button {
+        cursor: pointer;
+        color: white;
+        padding: 12px;
+        border-radius: 8px;
+        display: inline-block;
+        &.google {
+          background-color: #f5e503;
+          color: #000;
+        }
+      }
+    }
+  }
+}
