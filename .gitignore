@@ -24,3 +24,5 @@ yarn-error.log*
 
 /_cacache
 /_locks
+/node-sass
+/_logs
