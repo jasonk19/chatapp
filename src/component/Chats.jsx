@@ -66,7 +66,17 @@ export const Chats = () => {
   }, [user, history])
 
   if(!user || loading) {
-    return 'Loading...';
+    return (
+      <div className='loading-page'>
+        <div className="loading">
+          <span className="loader">
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+          
+    );
   }
 
   return (

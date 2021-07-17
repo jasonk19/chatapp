@@ -1,37 +1,67 @@
 .login {
-  background-image: linear-gradient(#dfdb06, #ac9308);
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  background-color: #dfbf0b;
   font-family: 'Ubuntu';
-  .login-card {
-    position: relative;
-    top: calc(50vh - 144px);
-    left: calc(50vw - 210px);
-    padding-top: 36px;
-    padding-bottom: 66px;
-    width: 420px;
-    text-align: center;
-    background-color: white;
-    border-radius: 22px;
-    .login-card-wrapper {
-      display: flex;
-      justify-content: center;
-      height: 4em;
-      align-items: flex-end;
-      .login-button {
-        cursor: pointer;
-        color: white;
-        padding: 12px;
-        border-radius: 8px;
-        display: inline-block;
-        &.google {
-          background-color: #f5e503;
-          color: #000;
+  height: 100vh;
+  width: 100vw;
+  .login-wrapper {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    .inner-login-page {
+      background-color: #fff;
+      height: 30em;
+      width: 65em;
+      border-radius: 20px;
+      .inner-wrapper {
+        padding: 5em;
+        display: flex;
+        .left {
+          width: 80%;
+          .title-wrapper {
+            h1 {
+              font-size: 4.5em;
+            }
+          }
+          .body-wrapper {
+            margin-top: 25px;
+            width: 25em;
+            p {
+              font-size: 1.5em;
+              .typed-text {
+                font-size: 1.8em;
+              }
+            }
+          }
+          .sign-in {
+            margin-top: 50px;
+            .login-button {
+              cursor: pointer;
+              color: white;
+              padding: 12px;
+              border-radius: 8px;
+              display: inline-block;
+              &.google {
+                background-color: #f5e503;
+                color: #000;
+              }
+            }
+          }
         }
+        .right {
+          width: 50%;
+          .image-wrapper {
+            
+            display: flex;
+            justify-content: flex-end;
+            .image {
+              height: 20em;
+            }
+          }
+        }
+        
       }
     }
   }
 }
+
