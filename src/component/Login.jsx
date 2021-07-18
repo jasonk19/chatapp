@@ -5,7 +5,7 @@ import './Login.scss'
 import firebase from 'firebase/app'
 import { auth } from '../firebase'
 
-import chatImg from '../image/chatimage.svg'
+import chatImg from '../image/chatImage.svg'
 
 import Typed from 'react-typed'
 
