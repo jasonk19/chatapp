@@ -20,7 +20,8 @@ export const Login = () => {
                 <h1>SPARTAchat</h1>
               </div>
               <div className='body-wrapper'>
-                <p>Aplikasi chatting sederhana berbasis website yang menjadi tempat untuk <Typed
+                <p>Aplikasi chatting sederhana berbasis website yang menjadi tempat untuk </p>
+                <Typed
                   strings={[
                     'Berbicara',
                     'Berdiskusi',
@@ -31,7 +32,7 @@ export const Login = () => {
                   className='typed-text'
                   loop={true}
                 >
-                </Typed></p>
+                </Typed>
               </div>
               <div className="sign-in">
                 <div

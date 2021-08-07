@@ -1,3 +1,5 @@
+@import '../styles/responsive.scss';
+
 .login {
   background-color: #dfbf0b;
   font-family: 'Ubuntu';
@@ -13,28 +15,57 @@
       height: 30em;
       width: 65em;
       border-radius: 20px;
+      @include respond-to('phone') {
+        height: 90%;
+        width: 80%;
+      }
       .inner-wrapper {
         padding: 5em;
         display: flex;
+        @include respond-to('phone') {
+          // flex-direction: column;
+          padding: 15px;
+          align-items: center;
+          height: inherit;
+        }
         .left {
           width: 80%;
+          @include respond-to('phone'){
+            width: 100%;
+          }
+
           .title-wrapper {
             h1 {
               font-size: 4.5em;
+              @include respond-to('phone') {
+                font-size: 2.5em;
+                text-align: center;
+                padding-block: 10px;
+              }
             }
           }
           .body-wrapper {
             margin-top: 25px;
             width: 25em;
+            @include respond-to('phone') {
+              width: 100%;
+              text-align: center;
+            }
             p {
               font-size: 1.5em;
-              .typed-text {
-                font-size: 1.8em;
+            }
+            .typed-text {
+              font-size: 3em;
+              @include respond-to('phone') {
               }
             }
           }
           .sign-in {
             margin-top: 50px;
+            @include respond-to('phone') {
+              display: flex;
+              justify-content: center;
+            }
             .login-button {
               cursor: pointer;
               color: white;
@@ -49,12 +80,18 @@
           }
         }
         .right {
+          @include respond-to('phone') {
+            display: none;
+          }
           width: 50%;
           .image-wrapper {
             
             display: flex;
             justify-content: flex-end;
             .image {
+              @include respond-to('phone') {
+                display: none;
+              }
               height: 20em;
             }
           }
